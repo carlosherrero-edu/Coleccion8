@@ -7,8 +7,8 @@ public class ProbarAgenda {
 		Contacto c1,c2,c3,c4,c5,c6, c7;
 		
 		c1= new Contacto("Carlos" , "Herrero", "678678678");
-		c2= new Contacto("María" , "Pérez", "914445566");
-		c3= new Contacto("Pilar" , "Gómez", "979445566");
+		c2= new Contacto("Maria" , "Perez", "914445566");
+		c3= new Contacto("Pilar" , "Gomez", "979445566");
 		c4= new Contacto("Rafael" , "Mora", "956333444");
 		c5= new Contacto("Beatriz" , "Franco", "645888999");
 		c6= new Contacto("Antonio" , "Castellanos", "988777666");
@@ -35,7 +35,7 @@ public class ProbarAgenda {
 		
 		// buscamos el telï¿½fono de Beatriz Pï¿½rez
 				
-		System.out.println("\n Teléfono de Beatriz Pérez: "+ miAgenda.localizarContacto("Beatriz", "Pérez"));
+		System.out.println("\n Teléfono de Beatriz Pérez: "+ miAgenda.localizarContacto("Beatriz", "Perez"));
 		
 		// buscamos dos nï¿½meros de telï¿½fono
 		String tel1="956333444";
@@ -43,7 +43,7 @@ public class ProbarAgenda {
 		
 		System.out.println("\nEl teléfono "+tel1+ " pertenece a "+ miAgenda.localizarContacto(tel1));
 		System.out.println("\nEl teléfono "+tel2+ " pertenece a "+ miAgenda.localizarContacto(tel2));
-		// TODO Auto-generated method stub
+		
 		
 		//borro un telï¿½fono
 		System.out.println( miAgenda.eliminarContacto("Rafael", "Mora") ? "Contacto eliminado": "Contacto no encontrado");
