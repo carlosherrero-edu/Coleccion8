@@ -1,4 +1,4 @@
-package pendientes.agendacontactos;
+package resueltos.agendacontactos;
 
 public class ProbarAgenda {
 
