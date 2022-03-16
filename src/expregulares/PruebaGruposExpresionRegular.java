@@ -15,7 +15,10 @@ public class PruebaGruposExpresionRegular {
 
 	public static void main(String[] args) {
 		//construimos la expresión regular y el objeto pattern
-		String expRegular="(?ui)hola\\d";
+		/*
+		 * ESta expresión extrae la primea y la última palabra de una frase
+		 */
+		String expRegular="(^\\w+)|(\\w+$)";
 		Pattern patron=Pattern.compile(expRegular);
 		
 		//repetimos mientras no introduzcamos cadena vacía

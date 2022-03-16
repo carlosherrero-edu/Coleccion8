@@ -1,8 +1,7 @@
 package expregulares;
 
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+
 
 /**
  * Clase para validar una cadena contra una expresión regular
@@ -14,7 +13,9 @@ public class ValidadorExpRegular {
 
 	public static void main(String[] args) {
 		//construimos la expresión regular y el objeto pattern
-		String expRegular="(?u)hola";
+		//patrón para validar un número de cuenta bancaria (formato IBAN) en España
+		String expRegular1="^ES\\d{2}(\\s+\\d{4}){5}$";  
+	
 		
 		
 		//repetimos mientras no introduzcamos cadena vacía
@@ -28,7 +29,7 @@ public class ValidadorExpRegular {
 			}
 			
 			//en caso contrario, comprobamos si la cadena se ajusta a la expresión
-			boolean coincide= validar.matches(expRegular);
+			boolean coincide= validar.matches(expRegular1);
 			
 		
 			System.out.format("%n La cadena %s  %s a la expresión regular",
